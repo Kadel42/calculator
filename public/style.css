@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.calculator {
+  width: 300px;
+  height: 350px;
+  background-color: darkolivegreen;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  border: 5px darkolivegreen outset;
+}
+
+button {
+  min-width: 70px;
+  min-height: 50px;
+  border: 3px darkgray outset;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+button:active {
+  border: 3px darkgray inset;
+}
+
+#display {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  background-color: lightblue;
+  border: 3px lightblue inset;
+  text-align: right;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+#clear {
+  grid-column-end: span 2;
+}
+
+#zero {
+  grid-column-end: span 2;
+}
+
+#equals {
+  grid-row-end: span 2;
+}
